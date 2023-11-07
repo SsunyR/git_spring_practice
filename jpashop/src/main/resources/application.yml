@@ -2,12 +2,14 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/jpashop?characterEncoding=UTF-8
+    # "jdbc:h2:mem:test" Can be used as memory server
+    # No configuration on 'spring' will run as memory server by SpringBoot
     username: root
     password: 1324
 
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: create # create-drop: Drop all tables after the test
     properties:
       hibernate:
         show_sql: true
