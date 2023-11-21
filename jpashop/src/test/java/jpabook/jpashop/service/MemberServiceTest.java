@@ -14,7 +14,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@ExtendWith(SpringExtension.class)
+@ExtendWith(SpringExtension.class) // '@RunWith(SpringRunner.class)' changed in JUnit5
+//
 @SpringBootTest
 @Transactional
 class MemberServiceTest {
