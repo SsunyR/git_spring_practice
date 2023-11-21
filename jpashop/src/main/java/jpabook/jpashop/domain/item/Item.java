@@ -32,7 +32,9 @@ public class Item {
 
 
     //==비즈니스 로직==//
-    // stockQuantity information is in Item entity, so business logic which modifies it should be in its class.
+    // stockQuantity information is in Item entity, so business logic which modifies it should be in its class(OOP).
+    // Creating business logic in entity calls "Domain-Model Pattern." <-> Transaction script pattern (SQL)
+    // It allows service layer delegates required request to entity.
     /**
      * stock 증가
      */
